@@ -21,26 +21,18 @@ public class PlantFinder {
 
     private int plantsToGather() {
         int roll = d20();
-        if(roll <= 10) {
+        if (roll <= 10) {
             return 1;
-        }
-        else if (roll >= 11 && roll <= 15) {
+        } else if (roll >= 11 && roll <= 15) {
             return d4();
-        }
-        else if (roll >= 16 && roll <= 18) {
+        } else if (roll >= 16 && roll <= 18) {
             return d4();
-        }
-        else if (roll == 19) {
+        } else if (roll == 19) {
             return d4() + 2;
-        }
-        else {
+        } else {
             return d4() + 4;
         }
     }
-
-
-
-
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -48,7 +40,6 @@ public class PlantFinder {
         System.out.println("Enter your current biome:");
 
         String biome = scanner.nextLine();
-        System.out.println(biome);
 
     }
 }
